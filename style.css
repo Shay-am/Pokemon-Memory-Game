@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: brown;
+    width: 100;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: burlywood;
+}
+#boardGame {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    
+}
+
+.box {
+    background-image: url(src/pokeball.jpeg); 
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.borderPokemon {
+    border: 1px solid yellow;
+}
+.button {
+    margin-top: 70px;
+    margin-left: 40%;
+    width: 180px;
+    height: 40px;
+    background-color: cadetblue;
+    color: white;
+}
+
+.buttonBorder {
+    border: 1px solid cyan;
+    color: cyan;
+}
