@@ -90,6 +90,7 @@ const pushPokemon = (node) => {
         pokemonImages.push(node);
     }
     if (pokemonImages.length == 2) {
+        
         if (pokemonImages[0].dataset.name !== pokemonImages[1].dataset.name) {
             function closer(tab) {
                 return () => {
@@ -98,7 +99,7 @@ const pushPokemon = (node) => {
                     })
                 }
             }
-            setTimeout(closer([...pokemonImages]), 500);
+            setTimeout(closer([...pokemonImages]), 500);            
         }
         pokemonImages.length = 0;
         return true;
@@ -107,7 +108,7 @@ const pushPokemon = (node) => {
 }
 
 
-const buttonBorderAdd = (e) => {
+const buttonAdd = (e) => {
     const button = document.querySelector('button');
     button.addEventListener('mouseover', () => {
         button.classList.add('buttonBorder');
@@ -121,7 +122,7 @@ const buttonBorderAdd = (e) => {
 }
 
 
-buttonBorderAdd();
+buttonAdd();
 boardGame.addEventListener('click', previousPokemonsImages);
 
 
